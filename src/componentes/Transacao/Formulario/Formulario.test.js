@@ -42,9 +42,11 @@ describe('Deve renderizar um campo de input', () => {
     const optionDefault = screen.getByRole('option', {
       name: 'Selecione um tipo de transação',
     }).selected;
+
     const optionDeposito = screen.getByRole('option', {
       name: 'Depósito',
     }).selected;
+
     const optionTransferencia = screen.getByRole('option', {
       name: 'Transferência',
     }).selected;

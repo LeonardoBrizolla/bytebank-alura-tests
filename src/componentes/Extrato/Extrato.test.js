@@ -10,6 +10,8 @@ test('Deve renderizar uma lista de transações', () => {
   ];
 
   render(<Extrato transacoes={transacoes} />);
+
   const lista = screen.getByRole('listitem');
+
   expect(lista).toBeInTheDocument();
 });
